@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(6, 100px);
+      gap: 10px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+
+    @media (max-width: 900px) {
+      .grid-container {
+        grid-template-columns: repeat(3, 100px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 100px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .grid-container {
+        grid-template-columns: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+</body>
+</html>
