@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      gap: 30px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+    }
+
+    @media (max-width: 600px) {
+      .grid-container {
+        gap: 10px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+</body>
+</html>
